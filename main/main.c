@@ -7,7 +7,7 @@
    CONDITIONS OF ANY KIND, either express or implied.
 */
 #include <stdio.h>
-#include <esp_idf_sys_wifi_and_https.h>
+// #include <esp_idf_sys_wifi_and_https.h>
 
 void app_main(void) {
     printf("Hello world from C!\n");
