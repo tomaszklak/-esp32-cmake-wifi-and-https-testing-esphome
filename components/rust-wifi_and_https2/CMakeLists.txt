@@ -1,3 +1,4 @@
+message(FATAL_ERROR "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 # If this component depends on other components - be it ESP-IDF or project-specific ones - enumerate those in the double-quotes below, separated by spaces
 # Note that pthread should always be there, or else STD will not work
 set(RUST_DEPS "driver" "esp_event" "esp_wifi" "wpa_supplicant" "nvs_flash" "esp_netif" "lwip" "esp-tls" "mbedtls" "esp_http_client" "esp_wireguard")
@@ -10,7 +11,7 @@ idf_component_register(
     PRIV_REQUIRES "${RUST_DEPS}"
 )
 
-message(FATAL_ERROR "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+
 
 if(CONFIG_IDF_TARGET_ARCH_RISCV)
     if (CONFIG_IDF_TARGET_ESP32C6 OR CONFIG_IDF_TARGET_ESP32C5 OR CONFIG_IDF_TARGET_ESP32H2)
